@@ -1,0 +1,16 @@
+Django~=5.1.1
+django-debug-toolbar~=4.4.6
+django-seed~=0.3.1
+psycopg2-binary~=2.9.9
+faker
+
+
+
+
+SELECT c.* FROM coche
+INNER JOIN marca m ON m.id = c.idmarca
+INNER JOIN fabrica f ON f.id = c.idFabrica
+
+WHERE m.modelo AND LIKE '%Renault%'
+    f.ciudad LIKE '%Sevilla%'
+
