@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Entrenadores</title>
+</head>
+<body>
+    <h1>Entrenadores</h1>
+    <table border="1">
+        <tr>
+            <th>ID Videojuego</th>
+            <th>Titulo</th>
+            <th>Pais Sede</th>
+        </tr>
+        {% for videojuegos in mostrar_videojuegos %}
+        <tr>
+            <td>{{ videojuegos.id }}</td>  
+            <td>{{ videojuegos.titulo }}</td>  
+            <td>{{ sede.pais }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

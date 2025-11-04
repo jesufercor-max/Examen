@@ -1,7 +1,10 @@
 from django.contrib import admin
-# QUitar hastag from .models import "meter nombre de los modelos " 
-
+from .models import Videojuego, Sede, Estudio, Plataforma , videojuego_plataformas 
 
 # Register your models here.
 
-# QUitar hastag admin.site.register("lo que ponga arriba")
+admin.site.register(Videojuego)
+admin.site.register(Sede)
+admin.site.register(Estudio)
+admin.site.register(Plataforma)
+admin.site.register(videojuego_plataformas)
